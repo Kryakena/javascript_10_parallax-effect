@@ -40,10 +40,10 @@ body{
     background: url('/img/mountain_1.jpg') 0 0 / cover no-repeat;
 }
 .parallax_mountain_2 {
-    background: url('/img/mountain_2.jpg') bottom right / 45% no-repeat; /*45% (пикселей) по ширине, внизу справа*/
+    background: url('/img/mountain_2.png') bottom right / 45% no-repeat; /*45% (пикселей) по ширине, внизу справа*/
 }
 .parallax_mountain_3 {
-    background: url('/img/mountain_3.jpg') bottom left / 45% no-repeat; /*45% (пикселей) по ширине, внизу слева*/
+    background: url('/img/mountain_3.png') bottom left / 45% no-repeat; /*45% (пикселей) по ширине, внизу слева*/
 }
 
 .parallax_fog {}
