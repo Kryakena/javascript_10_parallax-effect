@@ -1,4 +1,12 @@
-# Параллакс эффект
+# 🏔 Параллакс-эффект 🏔
+
+![2024-12-24_20-06-19](https://github.com/user-attachments/assets/b0c18120-465a-4897-b54f-cae4b65fc35e) ![2024-12-24_20-06-33](https://github.com/user-attachments/assets/f81446f4-539e-4add-a368-119daf7aae8b)
+
+
+
+https://github.com/user-attachments/assets/3fa0e38c-e2fa-451e-bfc0-5132def7c110
+
+
 
 Источник: видео "Как сделать параллакс эффект на CSS HTML jQuery. Туториал // Как это сделать? // 
 Фрилансер по жизни" https://vkvideo.ru/video-125918837_456239139?entrypoint=list_all
@@ -401,6 +409,9 @@ $('.parallax_mountain_3').css('transform','translate3d('+hr_2+'px,0,0) scale('+z
 </html>
 ```
 
+![2024-12-24_20-02-04](https://github.com/user-attachments/assets/84bd6a9f-b195-4172-b9b8-5b4b87a515ae)
+
+
 2. файл style.css
 
 ```css
@@ -495,6 +506,9 @@ body{
 }
 ```
 
+![2024-12-24_20-02-28](https://github.com/user-attachments/assets/34a02b97-0e98-43a8-9ce8-0ddb993288c1)
+
+
 3. файл script.js
 
 ```js
@@ -526,3 +540,5 @@ $(document).ready(function () {
  });
 });
 ```
+
+![2024-12-24_20-02-41](https://github.com/user-attachments/assets/45d06d11-a3aa-4822-888b-d685994893d9)
