@@ -207,8 +207,84 @@ z-index - чтобы горы по бокам накрыли текст.
 }
 ```
 
-13. в файл style.css 
+13. в файле style.css верстаем весь контент, чтобы текст просто был на картинке горы
 
 ```css
+.content {
+ position: relative;
+}
+```
+
+14. в файле style.css верстаем отображение всего контента 
+
+```css
+.content_body {
+ max-width: 1170px; /*ограничим по ширине*/
+ margin: 0px auto; /*выровнять по центру*/
+}
+```
+
+15. в файле style.css отображение текста
+
+```css
+.content_header {
+ text-align: center;
+ text-transform: uppercase;
+ margin-bottom: 20px;
+ padding: 0px 20px;
+}
+```
+
+16. в файле style.css отображение заголовка
+
+```css
+.content_title {
+ font-size: 200px;
+}
+```
+
+17. в файле style.css отображение подзаголовка
+
+```css
+.content_subtitle {
+ font-size: 120px;
+}
+```
+
+18. в файле style.css стилизуем отображение текста, его фон
+
+```css
+.content_article {
+ background-color: rgba(255, 255, 255, 0.5);
+ padding: 25px;
+ font-size: 18px;
+ line-height: 24px;
+}
+```
+
+19. в файл script.js вставляем шаблон
+
+```js
+$(document).ready(function () {
+
+});
+```
+
+20. в файле script.js создаем общие настройки отображения параллакс-эффекта
+
+```js
+$(document).ready(function () {
+ $window.scroll(function(event){
+  var s=$(this).scrollTop(); //s - пиксели, которые мы прокручиваем в окне браузера
+  var w=$(this).outerWidth(); //w - какая ширина окна, чтобы на неё опираться
+  var h=$('.content').outerHeight(); //h - высота контентной части
+  var h_b=$('.parallax').outerHeight(); //h - высота верхнего блока
+ });
+});
+```
+
+21. в файле script.js создаем там же % накрутки отображения параллакс-эффекта
+
+```js
 
 ```

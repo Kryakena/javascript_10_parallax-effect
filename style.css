@@ -58,9 +58,28 @@ body{
     z-index: 2; /*чтобы снег накрыл наши горы*/
 }
 
-.content {}
-.content_body {}
-.content_header {}
-.content_title {}
-.content_subtitle {}
-.content_article {}
+.content {
+    position: relative;
+}
+.content_body {
+    max-width: 1170px; /*ограничим по ширине*/
+    margin: 0px auto; /*выровнять по центру*/
+}
+.content_header {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding: 0px 20px;
+}
+.content_title {
+    font-size: 200px;
+}
+.content_subtitle {
+    font-size: 120px;
+}
+.content_article {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 25px;
+    font-size: 18px;
+    line-height: 24px;
+}
