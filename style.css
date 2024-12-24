@@ -40,13 +40,23 @@ body{
     background: url('/img/mountain_1.jpg') 0 0 / cover no-repeat;
 }
 .parallax_mountain_2 {
-    background: url('/img/mountain_2.png') bottom right / 45% no-repeat; /*45% (пикселей) по ширине, внизу справа*/
+    z-index: 1;
+    background: url('/img/mountain_2.png') bottom right / 60% no-repeat; /*60% (пикселей) по ширине, внизу справа*/
 }
 .parallax_mountain_3 {
+    z-index: 1;
     background: url('/img/mountain_3.png') bottom left / 45% no-repeat; /*45% (пикселей) по ширине, внизу слева*/
 }
 
-.parallax_fog {}
+.parallax_snow {
+    background: url('/img/snow.gif') top / 100% no-repeat; /*100% по ширине и размещаем снизу*/
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2; /*чтобы снег накрыл наши горы*/
+}
 
 .content {}
 .content_body {}

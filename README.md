@@ -3,8 +3,8 @@
 Источник: видео "Как сделать параллакс эффект на CSS HTML jQuery. Туториал // Как это сделать? // 
 Фрилансер по жизни" https://vkvideo.ru/video-125918837_456239139?entrypoint=list_all
 
-1. скачать изображение горы в тумане для заднего плана и 2х фотографий гор для переднего плана.
-Также скачать гифку с туманом
+1. скачать изображение горы для заднего плана и 2х фотографий гор для переднего плана.
+Фото с 2 горами для переднего фона и гифка - на прозрачном фоне. Также скачать гифку со снегом
 
 2. создаем создаем файлы index.html, style.css, script.js в папке проекта
 
@@ -43,7 +43,7 @@
 
 4. в файле index.html пишем структуру html кода. Для начала создаем общий блок page в разделе body.
  В нем блок parallax. Также в блоке parallax создаем div наших гор - все 3 штуки.
-Завершаем блок гифкой с туманом
+Завершаем блок гифкой со снегом
 
 ```html
 <div class="wrapper">
@@ -53,7 +53,7 @@
    <div class="parallax_mountain parallax_mountain_1"></div>
    <div class="parallax_mountain parallax_mountain_2"></div>
    <div class="parallax_mountain parallax_mountain_3"></div>
-   <div class="parallax_fog"></div>
+   <div class="parallax_snow"></div>
   </div>
  </div>
 </div>
@@ -156,7 +156,7 @@ overflow: hidden;
 }
 ```
 
-9. в файл style.css parallax, который содержит горы-туман. Контент (текст) уедет вниз на второй экран
+9. в файл style.css parallax, который содержит горы-снег. Контент (текст) уедет вниз на второй экран
 
 ```css
 .parallax {
@@ -176,10 +176,39 @@ overflow: hidden;
     left: 0;
 }
 ```
-11. в файл style.css вставляем в другие 3 класса 3 картинки с горами
+11. в файл style.css вставляем в другие 3 класса 3 картинки с горами.
+z-index - чтобы горы по бокам накрыли текст.
 
 ```css
 .parallax_mountain_1 {
-    background: url('../img/parallax_mountain.jpg') 0 0 / cover no-repeat;
+ background: url('/img/mountain_1.jpg') 0 0 / cover no-repeat;
 }
+.parallax_mountain_2 {
+ z-index: 1;
+ background: url('/img/mountain_2.png') bottom right / 60% no-repeat; /*45% (пикселей) по ширине, внизу справа*/
+}
+.parallax_mountain_3 {
+ z-index: 1;
+ background: url('/img/mountain_3.png') bottom left / 45% no-repeat; /*45% (пикселей) по ширине, внизу слева*/
+}
+```
+
+12. в файл style.css добавляем снег
+
+```css
+.parallax_fog {
+ background: url('/img/snow.gif') top / 100% no-repeat; /*100% по ширине и размещаем снизу*/
+ position: fixed;
+ height: 100%;
+ width: 100%;
+ top: 0;
+ left: 0;
+ z-index: 2; /*чтобы снег накрыл наши горы*/
+}
+```
+
+13. в файл style.css 
+
+```css
+
 ```
