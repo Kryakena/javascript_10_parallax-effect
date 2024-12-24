@@ -37,19 +37,19 @@ body{
     left: 0;
 }
 .parallax_mountain_1 {
-    background: url('mountain_1.jpg') 0 0 / cover no-repeat;
+    background: url('/img/mountain_1.jpg') 0 0 / cover no-repeat;
 }
 .parallax_mountain_2 {
     z-index: 1;
-    background: url('mountain_2.png') bottom right / 45% no-repeat; /*45% (пикселей) по ширине, внизу справа*/
+    background: url('/img/mountain_2.png') bottom right / 45% no-repeat; /*45% (пикселей) по ширине, внизу справа*/
 }
 .parallax_mountain_3 {
     z-index: 1;
-    background: url('mountain_3.png') left bottom / 45% no-repeat; /*45% (пикселей) по ширине, внизу слева*/
+    background: url('/img/mountain_3.png') left bottom / 45% no-repeat; /*45% (пикселей) по ширине, внизу слева*/
 }
 
 .parallax_fog {
-    background: url('fog.png') bottom / 100% no-repeat; /*100% по ширине и размещаем снизу*/
+    background: url('/img/fog.png') bottom / 100% no-repeat; /*100% по ширине и размещаем снизу*/
     position: fixed;
     height: 100%;
     width: 100%;
