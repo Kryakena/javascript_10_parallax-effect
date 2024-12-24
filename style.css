@@ -45,7 +45,7 @@ body{
 }
 .parallax_mountain_3 {
     z-index: 1;
-    background: url('/img/mountain_3.png') bottom left / 45% no-repeat; /*45% (пикселей) по ширине, внизу слева*/
+    background: url('/img/mountain_3.png') left bottom / 45% no-repeat; /*45% (пикселей) по ширине, внизу слева*/
 }
 
 .parallax_fog {
@@ -78,8 +78,12 @@ body{
     font-size: 120px;
 }
 .content_article {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255,255,255,0.5);
     padding: 25px;
     font-size: 18px;
     line-height: 24px;
+}
+
+.content_article p {
+    margin-bottom: 20px;
 }
